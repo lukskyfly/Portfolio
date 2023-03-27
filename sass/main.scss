@@ -1,1 +1,57 @@
 @import 'reset';
+@import 'colors';
+body {
+	background-color: $bgColor;
+	color: $textColor;
+}
+.header {
+	display: flex;
+	position: fixed;
+	background-color: $bgColor;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.5rem 9%;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	.logo {
+		color: $textColor;
+		font-size: 1.5rem;
+		font-weight: 600;
+		cursor: default;
+	}
+	a {
+		color: $textColor;
+		font-size: 1.2rem;
+		margin-left: 2rem;
+		transition: color 0.3s;
+		position: relative;
+	}
+	.navbar {
+		a:hover {
+			color: $mainColor;
+		}
+		.link,
+		.link::after,
+		.link::before {
+			transition: 0.8s;
+		}
+		.link::after {
+			content: '';
+			height: 1px;
+			width: 100%;
+			padding-top: 1px;
+			background-color: $mainColor;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: scaleX(0);
+			transform-origin: left;
+		}
+		.link:hover::after {
+			transform: scaleX(1);
+			transform-origin: right;
+		}
+	}
+}
