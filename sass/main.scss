@@ -11,24 +11,28 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1.5rem 9%;
+	padding: 2rem 9%;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
 	.logo {
 		color: $textColor;
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 		font-weight: 600;
 		cursor: default;
 	}
 	a {
 		color: $textColor;
-		font-size: 1.2rem;
-		margin-left: 2rem;
-		transition: color 0.3s;
-		position: relative;
+		font-size: 1.7rem;
+		margin-left: 4rem;
+		transition: color 0.8s;
+		
 	}
 	.navbar {
+		.link{
+			position: relative;
+		}
+		a.active,
 		a:hover {
 			color: $mainColor;
 		}
@@ -39,9 +43,9 @@ body {
 		}
 		.link::after {
 			content: '';
-			height: 1px;
+			height: .1rem;
 			width: 100%;
-			padding-top: 1px;
+			padding-top: .1em;
 			background-color: $mainColor;
 			position: absolute;
 			left: 0;
@@ -53,5 +57,9 @@ body {
 			transform: scaleX(1);
 			transform-origin: right;
 		}
+	}
+	.fa-bars{
+		font-size: 3.6rem;
+		color: $textColor;
 	}
 }
