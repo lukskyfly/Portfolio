@@ -42,6 +42,7 @@ table {
 }
 
 body {
+  font-family: "Shantell Sans", cursive;
   background-color: #1f242d;
   color: #fff;
 }
@@ -80,7 +81,7 @@ section {
 }
 .header .navbar a.active,
 .header .navbar a:hover {
-  color: #1ba841;
+  color: #15a3fb;
 }
 .header .navbar .link,
 .header .navbar .link::after,
@@ -92,7 +93,7 @@ section {
   height: 0.1rem;
   width: 100%;
   padding-top: 0.1em;
-  background-color: #1ba841;
+  background-color: #15a3fb;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -110,6 +111,8 @@ section {
 }
 
 .home {
+  gap: 2rem;
+  padding: 10rem 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +139,7 @@ section {
   line-height: 1.3;
 }
 .home .home-content span {
-  color: #1ba841;
+  color: #15a3fb;
 }
 .home .home-content .social-media a {
   display: inline-flex;
@@ -147,31 +150,31 @@ section {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #1ba841;
+  border: 0.2rem solid #15a3fb;
   border-radius: 50%;
-  color: #1ba841;
+  color: #15a3fb;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 .home .home-content .social-media a:hover {
-  background: #1ba841;
+  background: #15a3fb;
   color: #fff;
-  box-shadow: 0 0 1rem #1ba841;
+  box-shadow: 0 0 1rem #15a3fb;
 }
 .home .home-content .btn {
   display: inline-block;
   font-size: 1.6rem;
   padding: 1rem 2.8rem;
-  color: #fff;
-  border: 0.2 solid #1ba841;
-  background: #1ba841;
+  color: #1f242d;
+  background: #15a3fb;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem #1ba841;
+  box-shadow: 0 0 1rem #15a3fb;
   letter-spacing: 0.1rem;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 .home .home-content .btn:hover {
-  background: #1ba841;
-  color: #323946;
+  background: #15a3fb;
+  color: #fff;
   box-shadow: none;
 }/*# sourceMappingURL=main.css.map */
