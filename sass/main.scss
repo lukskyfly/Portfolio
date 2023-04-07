@@ -208,29 +208,52 @@ span {
 		.portfolio-box {
 			position: relative;
 			border-radius: 2em;
+			box-shadow: 0 0 1em $mainColor;
 			overflow: hidden;
 			display: flex;
-			box-shadow: 5px 5px 10px rgba(0,0,0, .7);
+			button {
+				position: absolute;
+				top: 0.1em;
+				right: 0.1em;
+				padding: 1em;
+				background: none;
+				color: $textColor;
+				font-size: 1.5em;
+				text-shadow: 0.2em 0.2em 0.5em rgb(0, 0, 0);
+				cursor: crosshair;
+				z-index: 10;
+			}
 			img {
 				width: 100%;
+				transition: 0.5s ease;
 			}
-			.portfolio-layer {
+			.text-box {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				color: $textColor;
 				text-align: center;
-				color: #fddcda;
-				top: 0;
-				right: 0;
-				position: absolute;
-			button{
-				position: absolute;
-				top: 10px;right: 10px;
-				padding: 10px;
-				background: none;
-				color:#fff;
-				font-size: 1.5em;
-				text-shadow: 2px 2px 5px rgb(0,0,0);
+				padding: 1.5em 3em;
+				z-index: 1;
+				p {
+					font-size: 1.7rem;
+				}
+				h1 {
+					font-size: 2.5rem;
+				}
 			}
 
+			.portfolio-shadow {
+				background-color: rgba(0, 0, 0, 0.8);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				z-index: 0;
 			}
 		}
+	}
+	.portfolio-box:hover img {
+		transform: scale(1.1);
 	}
 }
