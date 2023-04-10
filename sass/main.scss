@@ -124,24 +124,24 @@ span {
 				box-shadow: 0 0 1rem $mainColor;
 			}
 		}
-		.btn {
-			display: inline-block;
-			font-size: 1.6rem;
-			padding: 1em 2.8em;
-			color: $bgColor;
-			background: $mainColor;
-			border-radius: 4rem;
-			box-shadow: 0 0 1em $mainColor;
-			letter-spacing: 0.1em;
-			font-weight: 600;
-			transition: 0.5s ease;
-		}
-		.btn:hover {
-			background: $mainColor;
-			color: $textColor;
-			box-shadow: none;
-		}
 	}
+}
+.btn {
+	display: inline-block;
+	font-size: 1.6rem;
+	padding: 1em 2.8em;
+	color: $bgColor;
+	background: $mainColor;
+	border-radius: 4rem;
+	box-shadow: 0 0 1em $mainColor;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	transition: 0.5s ease;
+}
+.btn:hover {
+	background: $mainColor;
+	color: $textColor;
+	box-shadow: none;
 }
 .about {
 	background-color: $bg2Color;
@@ -196,7 +196,46 @@ span {
 	text-align: center;
 	font-size: 4.5em;
 }
+.services {
+	h2 {
+		margin-bottom: 3em;
+	}
+	.services-cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap:2em;
+		flex-wrap: wrap;
+		.card{
+			flex: 1 1 30em;
+			background: $bg2Color;
+			padding: 3em 2em 4em;
+			border-radius: 2em;
+			text-align: center;
+			border: .2em solid $bgColor;
+			transition: .5s ease;
+			i{
+				font-size: 7rem;
+				color: $mainColor;
+			}
+			h1{
+				font-size: 2.6rem;
+				padding: 1em 2em;
+			}
+			p{
+				font-size: 1.6rem;
+				margin: 1em 0 3em;
+			}
+		
+		}	.card:hover {
+			border-color: $mainColor;
+			transform: scale(1.02);
+		}
+	}
+	
+}
 .portfolio {
+	background-color: $bg2Color;
 	h2 {
 		margin-bottom: 4em;
 	}

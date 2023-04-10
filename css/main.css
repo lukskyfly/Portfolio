@@ -165,7 +165,8 @@ span {
   color: #fff;
   box-shadow: 0 0 1rem #15a3fb;
 }
-.home .home-content .btn {
+
+.btn {
   display: inline-block;
   font-size: 1.6rem;
   padding: 1em 2.8em;
@@ -177,7 +178,8 @@ span {
   font-weight: 600;
   transition: 0.5s ease;
 }
-.home .home-content .btn:hover {
+
+.btn:hover {
   background: #15a3fb;
   color: #fff;
   box-shadow: none;
@@ -237,6 +239,45 @@ span {
   font-size: 4.5em;
 }
 
+.services h2 {
+  margin-bottom: 3em;
+}
+.services .services-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.services .services-cards .card {
+  flex: 1 1 30em;
+  background: #323946;
+  padding: 3em 2em 4em;
+  border-radius: 2em;
+  text-align: center;
+  border: 0.2em solid #1f242d;
+  transition: 0.5s ease;
+}
+.services .services-cards .card i {
+  font-size: 7rem;
+  color: #15a3fb;
+}
+.services .services-cards .card h1 {
+  font-size: 2.6rem;
+  padding: 1em 2em;
+}
+.services .services-cards .card p {
+  font-size: 1.6rem;
+  margin: 1em 0 3em;
+}
+.services .services-cards .card:hover {
+  border-color: #15a3fb;
+  transform: scale(1.02);
+}
+
+.portfolio {
+  background-color: #323946;
+}
 .portfolio h2 {
   margin-bottom: 4em;
 }
