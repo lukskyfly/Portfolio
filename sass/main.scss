@@ -204,40 +204,39 @@ span {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap:2em;
+		gap: 2em;
 		flex-wrap: wrap;
-		.card{
+		.card {
 			flex: 1 1 30em;
 			background: $bg2Color;
 			padding: 3em 2em 4em;
 			border-radius: 2em;
 			text-align: center;
-			border: .2em solid $bgColor;
-			transition: .5s ease;
-			i{
+			border: 0.2em solid $bgColor;
+			transition: 0.5s ease;
+			i {
 				font-size: 7rem;
 				color: $mainColor;
 			}
-			h1{
+			h1 {
 				font-size: 2.6rem;
 				padding: 1em 2em;
 			}
-			p{
+			p {
 				font-size: 1.6rem;
 				margin: 1em 0 3em;
 			}
-		
-		}	.card:hover {
+		}
+		.card:hover {
 			border-color: $mainColor;
 			transform: scale(1.02);
 		}
 	}
-	
 }
 .portfolio {
 	background-color: $bg2Color;
 	h2 {
-		margin-bottom: 4em;
+		margin-bottom: 3em;
 	}
 	.portfolio-container {
 		display: grid;
@@ -297,5 +296,44 @@ span {
 	}
 	.portfolio-box:hover .portfolio-shadow {
 		transform: translateY(0);
+	}
+}
+.contact {
+	h2 {
+		margin-bottom: 3em;
+	}
+	form {
+		width: 49%;
+		min-width: 70em;
+		margin: 1em auto;
+		text-align: center;
+		margin-bottom: 3em;
+		margin: 0.7em 0;
+		textarea {
+			width: 100%;
+			padding: 1.5em;
+			font-size: 1.6rem;
+			color: $textColor;
+			background: $bg2Color;
+			border-radius: 0.8em;
+			margin: 0.7em 0;
+		}
+	}
+}
+
+.input-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	input {
+		width: 100%;
+		padding: 1.5em;
+		margin: 0.5em;
+		font-size: 1.6rem;
+		color: $textColor;
+		background: $bg2Color;
+		border-radius: 0.8em;
+		margin: 0.7em 0;
+		width: 49%;
 	}
 }
