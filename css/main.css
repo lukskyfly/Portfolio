@@ -340,16 +340,18 @@ span {
   transform: translateY(0);
 }
 
-.contact h2 {
-  margin-bottom: 3em;
+.contact .btn {
+  margin-top: 3em;
+  cursor: pointer;
 }
 .contact form {
+  flex-direction: row;
+  justify-content: center;
   width: 49%;
   min-width: 70em;
   margin: 1em auto;
   text-align: center;
   margin-bottom: 3em;
-  margin: 0.7em 0;
 }
 .contact form textarea {
   width: 100%;
@@ -359,6 +361,7 @@ span {
   background: #323946;
   border-radius: 0.8em;
   margin: 0.7em 0;
+  resize: none;
 }
 
 .input-box {
@@ -376,4 +379,19 @@ span {
   border-radius: 0.8em;
   margin: 0.7em 0;
   width: 49%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 9%;
+  background-color: #323946;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.footer .footer-text {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

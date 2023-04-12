@@ -299,16 +299,22 @@ span {
 	}
 }
 .contact {
+	
+	.btn{
+		margin-top: 3em;
+		cursor: pointer;
+	}
 	h2 {
-		margin-bottom: 3em;
+		// margin: 2em 3em;
 	}
 	form {
+		flex-direction: row;
+		justify-content: center;
 		width: 49%;
 		min-width: 70em;
 		margin: 1em auto;
 		text-align: center;
 		margin-bottom: 3em;
-		margin: 0.7em 0;
 		textarea {
 			width: 100%;
 			padding: 1.5em;
@@ -317,6 +323,7 @@ span {
 			background: $bg2Color;
 			border-radius: 0.8em;
 			margin: 0.7em 0;
+			resize: none;
 		}
 	}
 }
@@ -336,4 +343,18 @@ span {
 		margin: 0.7em 0;
 		width: 49%;
 	}
+}
+.footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em 9%;
+	background-color: $bg2Color;
+	flex-wrap: wrap;
+	width: 100%;
+	.footer-text{
+		color: $textColor;
+		font-size: 1.6rem;
+		text-align: center;
+}
 }
