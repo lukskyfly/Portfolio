@@ -7,7 +7,7 @@ body {
 }
 section {
 	height: 100vh;
-	padding: 10em 9% 2rem;
+	padding: 10em 9% 2em;
 }
 span {
 	color: $mainColor;
@@ -299,13 +299,12 @@ span {
 	}
 }
 .contact {
-	
-	.btn{
+	.btn {
 		margin-top: 3em;
 		cursor: pointer;
 	}
 	h2 {
-		// margin: 2em 3em;
+		margin: 2em 3em;
 	}
 	form {
 		flex-direction: row;
@@ -326,35 +325,52 @@ span {
 			resize: none;
 		}
 	}
-}
 
-.input-box {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	input {
-		width: 100%;
-		padding: 1.5em;
-		margin: 0.5em;
-		font-size: 1.6rem;
-		color: $textColor;
-		background: $bg2Color;
-		border-radius: 0.8em;
-		margin: 0.7em 0;
-		width: 49%;
+	.input-box {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		input {
+			padding: 1.5em;
+			margin: 0.5em;
+			font-size: 1.6rem;
+			color: $textColor;
+			background: $bg2Color;
+			border-radius: 0.8em;
+			margin: 0.7em 0;
+			width: 49%;
+		}
 	}
 }
-.footer{
+.footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 2em 9%;
-	background-color: $bg2Color;
-	flex-wrap: wrap;
 	width: 100%;
-	.footer-text{
+	background: $bg2Color;
+	flex-wrap: wrap;
+	.footer-text {
 		color: $textColor;
 		font-size: 1.6rem;
 		text-align: center;
+	}
 }
+
+.scrollToTop {
+	position: fixed;
+	text-align: center;
+	justify-content: center;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	bottom: 3em;
+	right: 2em;
+	box-shadow: 0 16px 32px rgba(250, 250, 250, 0.2);
+	color: $textColor;
+	font-size: 3rem;
+	display: none;
+}
+.hide {
+	display: inline;
 }
