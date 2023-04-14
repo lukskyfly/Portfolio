@@ -414,4 +414,15 @@ span {
 
 .hide {
   display: inline;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 2em 3%;
+  }
 }/*# sourceMappingURL=main.css.map */
