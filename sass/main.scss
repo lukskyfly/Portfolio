@@ -78,7 +78,8 @@ span {
 	justify-content: center;
 	align-items: center;
 	img {
-		height: 70em;
+		width: 20vw;
+		height: 40em;
 		padding-right: 5em;
 	}
 	.home-content {
@@ -151,7 +152,8 @@ span {
 	justify-content: center;
 	align-items: center;
 	img {
-		height: 70em;
+		width: 20vw;
+		height: 40em;
 		padding-right: 5em;
 	}
 	a {
@@ -300,8 +302,9 @@ span {
 }
 .contact {
 	.btn {
-		margin-top: 3em;
+		margin: 3em;
 		cursor: pointer;
+		overflow: hidden;
 	}
 	h2 {
 		margin: 2em 3em;
@@ -382,6 +385,12 @@ span {
 }
 @media (max-width:991px){
 	.header{
+		padding: 2em 3%;
+	}
+	section{
+		padding: 10em 3% 2em;
+	}
+	.footer{
 		padding: 2em 3%;
 	}
 }

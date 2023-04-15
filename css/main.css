@@ -122,7 +122,8 @@ span {
   align-items: center;
 }
 .home img {
-  height: 70em;
+  width: 20vw;
+  height: 40em;
   padding-right: 5em;
 }
 .home .home-content h3 {
@@ -194,7 +195,8 @@ span {
   align-items: center;
 }
 .about img {
-  height: 70em;
+  width: 20vw;
+  height: 40em;
   padding-right: 5em;
 }
 .about a {
@@ -341,8 +343,9 @@ span {
 }
 
 .contact .btn {
-  margin-top: 3em;
+  margin: 3em;
   cursor: pointer;
+  overflow: hidden;
 }
 .contact h2 {
   margin: 2em 3em;
@@ -423,6 +426,12 @@ span {
 }
 @media (max-width: 991px) {
   .header {
+    padding: 2em 3%;
+  }
+  section {
+    padding: 10em 3% 2em;
+  }
+  .footer {
     padding: 2em 3%;
   }
 }/*# sourceMappingURL=main.css.map */
