@@ -390,7 +390,6 @@ span {
   justify-content: space-around;
   align-items: center;
   padding: 2em 9%;
-  width: 100%;
   background: #323946;
   flex-wrap: wrap;
 }
@@ -428,10 +427,39 @@ span {
   .header {
     padding: 2em 3%;
   }
+  .home img {
+    width: 30vw;
+  }
+  .about img {
+    width: 30vw;
+  }
   section {
     padding: 10em 3% 2em;
   }
   .footer {
     padding: 2em 3%;
+  }
+}
+@media (max-width: 812px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1em 3%;
+    background: #1f242d;
+    border-top: 0.1em solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  }
+  .navbar .active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    margin: 3em 0;
   }
 }/*# sourceMappingURL=main.css.map */

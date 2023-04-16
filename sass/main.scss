@@ -350,7 +350,6 @@ span {
 	justify-content: space-around;
 	align-items: center;
 	padding: 2em 9%;
-	width: 100%;
 	background: $bg2Color;
 	flex-wrap: wrap;
 	.footer-text {
@@ -378,23 +377,57 @@ span {
 	display: inline;
 }
 
-@media (max-width:1200px){
-	html{
+@media (max-width: 1200px) {
+	html {
 		font-size: 55%;
 	}
 }
-@media (max-width:991px){
-	.header{
+@media (max-width: 991px) {
+	.header {
 		padding: 2em 3%;
 	}
-	section{
+	.home {
+		img {
+			width: 30vw;
+		}
+	}
+	.about {
+		img {
+			width: 30vw;
+		}
+	}
+	section {
 		padding: 10em 3% 2em;
 	}
-	.footer{
+	.footer {
 		padding: 2em 3%;
 	}
 }
 
-@media (max-width:1200px){}
+@media (max-width: 812px) {
+	#menu-icon {
+		display: block;
+	}
+	.navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1em 3%;
+		background: $bgColor;
+		border-top: 0.1em solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+		// display: none;
+		.active{
+			display: block;
+		}
+		a {
+			display: block;
+			font-size: 1rem;
+			margin: 3em 0;
+		}
+	}
+}
 
-@media (max-width:1200px){}
+@media (max-width: 1200px) {
+}
