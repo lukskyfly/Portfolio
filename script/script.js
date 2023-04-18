@@ -1,3 +1,10 @@
+let menuIcon = document.querySelector('#menu-icon')
+let navBar = document.querySelector('.navbar')
+
+menuIcon.onclick = () => {
+	menuIcon.classList.toggle('fa-x')
+	navBar.classList.toggle('active')
+}
 //zaznaczenie w navigacji aktywnej secji
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
@@ -16,6 +23,11 @@ window.onscroll = () => {
 			})
 		}
 	})
+	let header = document.querySelector('header')
+	header.classList.toggle('sticky', window.scrollY > 100);
+
+	// menuIcon.classList.remove('fa-bars')
+	navBar.classList.remove('active')
 }
 // dodawanie klasy .hide (przenoszenie na gore strony)
 const arrowUp = document.querySelector('.scrollToTop')
@@ -27,11 +39,3 @@ function trackScroll() {
 	}
 }
 window.addEventListener('scroll', trackScroll)
-
-let menuIcon = document.querySelector('#menu-icon')
-let navBar = document.querySelector('.navbar')
-
-menuIcon.onclick = () => {
-	menuIcon.classList.toggle('fa-xmark')
-	navBar.classList.toggle('active')
-}
