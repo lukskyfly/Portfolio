@@ -340,7 +340,7 @@ span {
 		flex-wrap: wrap;
 		input {
 			padding: 1.5em;
-			margin: 0.5em;
+			// margin: 0.5em;
 			font-size: 1.6rem;
 			color: $textColor;
 			background: $bg2Color;
@@ -436,27 +436,111 @@ span {
 		}
 	}
 	.home {
+		padding: 5em 10em;
 		flex-direction: column-reverse;
 		.hero-img {
+			margin-top: 1em;
 			img {
 				width: 45vw;
-				margin: 5em 0 5em;
+				padding: 2em 4em;
+			}
+		}
+
+		.home-content {
+			margin-top: 7em;
+			h3:nth-of-type(2) {
+				margin-bottom: 1em;
+			}
+			h1 {
+				font-size: 5em;
+			}
+			.btn {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				margin-top: 1rem;
 			}
 		}
 	}
-	.home-content {
-		margin-top: 1em;
-		h3 {
-			font-size: 2.6rem;
+	.about {
+		padding: 5em 10em;
+		flex-direction: column;
+		.about-img {
+			margin-top: 10em;
+			img {
+				width: 45vw;
+				padding: 2em 4em;
+			}
 		}
-		h1 {
-			font-size: 5rem;
+
+		.about-content {
+			margin: 2em 0;
 		}
-		.btn {
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-top: 1rem;
+	}
+	.portfolio {
+		margin-top: 30em;
+		.portfolio-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	.footer {
+		margin-top: 20em;
+	}
+}
+@media (max-width: 617px) {
+	html {
+		font-size: 50%;
+	}
+	.portfolio {
+		margin-top: 25em;
+
+		.portfolio-container {
+			grid-template-columns: 1fr;
+		}
+	}
+	.contact {
+		form {
+			min-height: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+// @media (max-width: 450px) {
+// 	.contact{
+// 		.input-box{
+// 			input{
+// 				width: 100%;
+// 			}
+// 		}
+// 		// form{
+// 		// 	width: 100%;
+// 		// }
+// 	}
+// }
+@media (max-width: 450px) {
+	.home {
+		min-height: auto;
+		.hero-img {
+			img {
+				width: 45vw;
+				padding-bottom: 10em;
+			}
+		}
+
+		.home-content {
+			padding-top: 10em;
+			h3 {
+				font-size: 1.6rem;
+			}
+			h1 {
+				font-size: 3rem;
+			}
+			.btn {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				margin-top: 1rem;
+			}
 		}
 	}
 	.about {
@@ -477,34 +561,22 @@ span {
 	.portfolio {
 		margin-top: 20em;
 		.portfolio-container {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	.contact {
-		margin-top: 1em;
-	}
-}
-@media (max-width: 617px) {
-	html{
-		font-size: 50%;
-	}
-	.portfolio {
-		margin-top: 120em;
-		min-height: auto;
-		.portfolio-container {
 			grid-template-columns: 1fr;
 		}
 	}
-}
-@media (max-width: 450px) {
-	.contact{
-		.input-box{
-			input{
+	.contact {
+		form{
+			textarea {
 				width: 100%;
+				margin-right: 2em;
 			}
 		}
-		// form{
-		// 	width: 100%;
-		// }
+		.input-box {
+			input {
+				width: 100%;
+				margin-right: 2em;
+			}
+		}
+		
 	}
 }
