@@ -370,7 +370,6 @@ span {
 }
 .contact form textarea {
   width: 100%;
-  padding: 1.5em;
   font-size: 1.6rem;
   color: #fff;
   background: #323946;
@@ -533,15 +532,18 @@ span {
   }
   .contact form {
     min-height: 100%;
-    margin: 0 auto;
   }
 }
 @media (max-width: 450px) {
+  .header {
+    width: 100vw;
+  }
   .home {
+    padding: 2em 4em;
     min-height: auto;
   }
   .home .hero-img img {
-    width: 45vw;
+    width: 55vw;
     padding-bottom: 10em;
   }
   .home .home-content {
@@ -581,11 +583,11 @@ span {
     grid-template-columns: 1fr;
   }
   .contact form textarea {
-    width: 100%;
-    margin-right: 2em;
+    display: flex;
+    width: 100vw;
+    resize: unset;
   }
   .contact .input-box input {
-    width: 100%;
-    margin-right: 2em;
+    width: 100vw;
   }
 }/*# sourceMappingURL=main.css.map */
