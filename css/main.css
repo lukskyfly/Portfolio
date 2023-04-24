@@ -423,9 +423,17 @@ span {
   display: inline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 55%;
+    font-size: 75%;
+  }
+  .header a {
+    margin-left: 2em;
+  }
+}
+@media (max-width: 1024px) {
+  .contact form {
+    min-width: 60em;
   }
 }
 @media (max-width: 991px) {
@@ -439,7 +447,21 @@ span {
     width: 30vw;
   }
   section {
-    padding: 10em 3% 2em;
+    padding-right: 1em;
+  }
+  .portfolio {
+    margin-top: 30em;
+  }
+  .portfolio .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact {
+    margin-top: 30em;
+  }
+  .contact form {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    min-width: 45em;
   }
   .footer {
     padding: 2em 3%;
@@ -585,7 +607,7 @@ span {
   .contact form textarea {
     display: flex;
     width: 100vw;
-    resize: unset;
+    min-width: 4, 5em;
   }
   .contact .input-box input {
     width: 100vw;
