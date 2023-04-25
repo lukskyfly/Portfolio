@@ -432,6 +432,9 @@ span {
   }
 }
 @media (max-width: 1024px) {
+  .contact {
+    margin-top: 40em;
+  }
   .contact form {
     min-width: 60em;
   }
@@ -441,16 +444,26 @@ span {
     padding: 2em 3%;
   }
   .home img {
-    width: 30vw;
+    width: 40vw;
+  }
+  .about .heading {
+    display: inline-flex;
+    margin-bottom: 2em;
   }
   .about img {
-    width: 30vw;
+    width: 40vw;
   }
   section {
-    padding-right: 1em;
+    padding: 0 10em;
+  }
+  .services .heading {
+    margin-top: 2em;
   }
   .portfolio {
-    margin-top: 30em;
+    margin: 4em 0 0 0;
+  }
+  .portfolio .heading {
+    padding-top: 2em;
   }
   .portfolio .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
@@ -459,8 +472,6 @@ span {
     margin-top: 30em;
   }
   .contact form {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
     min-width: 45em;
   }
   .footer {
@@ -536,7 +547,15 @@ span {
     margin-top: 30em;
   }
   .portfolio .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .contact form textarea {
+    display: flex;
+    width: 100vw;
+    min-width: 4, 5em;
+  }
+  .contact .input-box input {
+    width: 100vw;
   }
   .footer {
     margin-top: 20em;
