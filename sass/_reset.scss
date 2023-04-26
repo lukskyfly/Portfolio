@@ -4,11 +4,15 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    border: none;
+    outline: none;
 }
 
 html,
 body {
 	height: 100%;
+	background: $bgColor;
+    color: $textColor;
 }
 
 html {
@@ -30,10 +34,6 @@ select {
 button {
 	border: none;
 	cursor: pointer;
-}
-
-textarea {
-	resize: vertical;
 }
 
 table {

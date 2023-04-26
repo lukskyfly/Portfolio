@@ -8,6 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
     rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/e8414fd81e.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
@@ -16,7 +17,9 @@
 <body>
   <header class="header">
     <a href="#" class="logo">Portfolio</a>
-    <i class="fa-solid fa-x fa-bars" id="menu-icon"></i>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
     <nav class="navbar">
       <a href="#home" class="link active">Home</a>
       <a href="#about" class="link">About</a>
@@ -25,6 +28,7 @@
       <a href="#contact" class="link">Contact</a>
     </nav>
   </header>
+
   <section class="home" id="home">
     <div class="hero-img">
       <img src="img/LG.png" alt="Przystojny z brodą łysy mężczyzna w marynarce i białej koszuli.">
@@ -36,7 +40,7 @@
       <p>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, repellat. Lorem
         ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur sint magni corrupti cupiditate soluta?*
       </p>
-     
+
       <div class="social-media">
         <a href="https://github.com/lukskyfly"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.facebook.com/lukasz.grazda"><i class="fa-brands fa-facebook"></i></a>
@@ -46,6 +50,7 @@
       <a href="#" class="btn">Pobierz CV</a>
     </div>
   </section>
+
   <section class="about" id="about">
     <div class="about-content">
       <h2 class="heading">O <span>Mnie</span></h2>
@@ -58,37 +63,43 @@
       <img src="img/LG.png" alt="Przystojny z brodą łysy mężczyzna w marynarce i białej koszuli.">
     </div>
   </section>
-<section class="services" id="services">
-  <h2 class="heading">Nasze <span>usługi</span></h2>
-  <div class="services-cards">
-    <div class="card">
-      <i class="fa-solid fa-code"></i>
-      <h1>Web Development</h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod incidunt dolore dolores sequi ratione harum reprehenderit.  </p>
-      <a href="#" class="btn" >Więcej</a>
+
+  <section class="services" id="services">
+    <h2 class="heading">Nasze <span>usługi</span></h2>
+
+    <div class="services-cards">
+      <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h1>Web Development</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod
+          incidunt dolore dolores sequi ratione harum reprehenderit. </p>
+        <a href="#" class="btn">Więcej</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-pencil"></i>
+        <h1>Web Development</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod
+          incidunt dolore dolores sequi ratione harum reprehenderit. </p>
+        <a href="#" class="btn">Więcej</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-chart-simple"></i>
+        <h1>Web Development</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod
+          incidunt dolore dolores sequi ratione harum reprehenderit. </p>
+        <a href="#" class="btn">Więcej</a>
+      </div>
     </div>
-    <div class="card">
-      <i class="fa-solid fa-pencil"></i>
-      <h1>Web Development</h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod incidunt dolore dolores sequi ratione harum reprehenderit.  </p>
-      <a href="#" class="btn" >Więcej</a>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-chart-simple"></i>
-      <h1>Web Development</h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium expedita voluptate quod incidunt dolore dolores sequi ratione harum reprehenderit.  </p>
-      <a href="#" class="btn" >Więcej</a>
-    </div>
-  </div>
-</section>
+  </section>
   <section class="portfolio" id="portfolio">
     <h2 class="heading">Najnowsze<span> Projekty</span></h2>
     <div class="portfolio-container">
       <div class="portfolio-box">
         <img src="img/portfolio1.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -97,9 +108,10 @@
       </div>
       <div class="portfolio-box">
         <img src="img/portfolio2.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -108,9 +120,10 @@
       </div>
       <div class="portfolio-box">
         <img src="img/portfolio3.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -119,9 +132,10 @@
       </div>
       <div class="portfolio-box">
         <img src="img/portfolio4.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -130,9 +144,10 @@
       </div>
       <div class="portfolio-box">
         <img src="img/portfolio5.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -141,9 +156,10 @@
       </div>
       <div class="portfolio-box">
         <img src="img/portfolio6.jpg" alt="sprzet agd, lodowka, pralka, zmywarka itd">
-        
+
         <div class="portfolio-shadow">
-          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://lukskyfly.github.io/Usterka/#home" target="_blank"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
           <div class="text-box">
             <h1>FixMe</h1>
             <p>Serwis do zamawiania serwisantów AGD, Złota rączka itp.</p>
@@ -151,18 +167,20 @@
         </div>
       </div>
     </div>
+
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
+
       <form action="#">
         <div class="input-box">
           <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Adddress">
+          <input type="email" placeholder="Email Address">
         </div>
         <div class="input-box">
           <input type="number" placeholder="Mobile Number">
           <input type="text" placeholder="Email Subject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder=" Your Message"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
       </form>
     </section>
@@ -171,12 +189,19 @@
     </a>
     <footer class="footer">
       <div class="footer-text">
-        <p>&copy; Łukasz Grazda Portfolio</p>
+        <p>Copyright &copy; 2023 by Lukasz Grazda | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
       </div>
     </footer>
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-      <script src="./script/script.js"></script>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
