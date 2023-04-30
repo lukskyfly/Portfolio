@@ -7,14 +7,13 @@
 	border: none;
 	outline: none;
 	scroll-behavior: smooth;
-	font-family: 'Poppins', sans-serif;
 }
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
 }
 body {
-	font-family: 'Shantell Sans', cursive;
+	font-family: 'Poppins', sans-serif;
 	background-color: $bgColor;
 	color: $textColor;
 }
@@ -217,16 +216,17 @@ span {
 .services {
 	min-height: auto;
 	padding-bottom: 10rem;
+
 	h2 {
 		margin-bottom: 5em;
 	}
-	.services-cards {
+	.services-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 2em;
 		flex-wrap: wrap;
-		.card {
+		gap: 2rem;
+		.services-box {
 			flex: 1 1 30em;
 			background: $bg2Color;
 			padding: 3em 2em 4em;
@@ -246,7 +246,7 @@ span {
 				margin: 1em 0 3em;
 			}
 		}
-		.card:hover {
+		.services-box:hover {
 			border-color: $mainColor;
 			transform: scale(1.02);
 		}
@@ -366,7 +366,6 @@ span {
 	justify-content: space-around;
 	align-items: center;
 	padding: 2em 9%;
-	background: $bg2Color;
 	flex-wrap: wrap;
 	.footer-text {
 		p {
@@ -397,105 +396,104 @@ span {
 	}
 }
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
+	.header {
+		padding: 2rem 3%;
+	}
 
-    section {
-        padding: 10rem 3% 2rem;
-    }
+	section {
+		padding: 10rem 3% 2rem;
+	}
 
-    .footer {
-        padding: 2rem 3%;
-    }
+	.footer {
+		padding: 2rem 3%;
+	}
 }
 @media (max-width: 879px) {
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+	.portfolio-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
+	#menu-icon {
+		display: block;
+	}
 
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
+	.navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 3%;
+		background: var(--bg-color);
+		border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		display: none;
+	}
 
-    .navbar.active {
-        display: block;
-    }
+	.navbar.active {
+		display: block;
+	}
 
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+	.navbar a {
+		display: block;
+		font-size: 2rem;
+		margin: 3rem 0;
+	}
 
-    .home {
-        flex-direction: column;
-    }
+	.home {
+		flex-direction: column;
+	}
 
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
+	.home-content h3 {
+		font-size: 2.6rem;
+	}
 
-    .home-content h1 {
-        font-size: 5rem;
-    }
+	.home-content h1 {
+		font-size: 5rem;
+	}
 
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+	.home-img img {
+		width: 70vw;
+		margin-top: 4rem;
+	}
 
-    .about {
-        flex-direction: column-reverse;
-    }
+	.about {
+		flex-direction: column-reverse;
+	}
 
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+	.about img {
+		width: 70vw;
+		margin-top: 4rem;
+	}
 }
 @media (max-width: 580px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
+	.portfolio-container {
+		grid-template-columns: 1fr;
+	}
 }
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
+	html {
+		font-size: 50%;
+	}
 
-    .contact form .input-box input {
-        width: 100%;
-    }
+	.contact form .input-box input {
+		width: 100%;
+	}
 
-    .footer {
-        flex-direction: column-reverse;
-    }
+	.footer {
+		flex-direction: column-reverse;
+	}
 
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
+	.footer p {
+		text-align: center;
+		margin-top: 2rem;
+	}
 }
 
 @media (max-width: 365px) {
-
-    .home-img img,
-    .about-img img {
-        width: 90vw;
-    }
+	.home-img img,
+	.about-img img {
+		width: 90vw;
+	}
 }

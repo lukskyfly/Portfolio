@@ -6,7 +6,6 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -15,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Shantell Sans", cursive;
+  font-family: "Poppins", sans-serif;
   background-color: #1f242d;
   color: #fff;
 }
@@ -227,14 +226,14 @@ span {
 .services h2 {
   margin-bottom: 5em;
 }
-.services .services-cards {
+.services .services-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
   flex-wrap: wrap;
+  gap: 2rem;
 }
-.services .services-cards .card {
+.services .services-container .services-box {
   flex: 1 1 30em;
   background: #323946;
   padding: 3em 2em 4em;
@@ -243,18 +242,18 @@ span {
   border: 0.2em solid #1f242d;
   transition: 0.5s ease;
 }
-.services .services-cards .card i {
+.services .services-container .services-box i {
   font-size: 7rem;
   color: #15a3fb;
 }
-.services .services-cards .card h3 {
+.services .services-container .services-box h3 {
   font-size: 2.6rem;
 }
-.services .services-cards .card p {
+.services .services-container .services-box p {
   font-size: 1.6rem;
   margin: 1em 0 3em;
 }
-.services .services-cards .card:hover {
+.services .services-container .services-box:hover {
   border-color: #15a3fb;
   transform: scale(1.02);
 }
@@ -374,7 +373,6 @@ span {
   justify-content: space-around;
   align-items: center;
   padding: 2em 9%;
-  background: #323946;
   flex-wrap: wrap;
 }
 .footer .footer-text p {
