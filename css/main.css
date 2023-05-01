@@ -104,7 +104,10 @@ span {
   justify-content: center;
   align-items: center;
 }
-.home img {
+.home .hero-img {
+  padding: 10em;
+}
+.home .hero-img img {
   width: 20vw;
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -184,7 +187,8 @@ span {
   gap: 2rem;
 }
 .about img {
-  width: 20vw;
+  padding: 10em;
+  width: 30vw;
 }
 .about a {
   display: inline-block;
@@ -212,19 +216,20 @@ span {
 }
 .about .about-content {
   position: relative;
+  text-align: center;
 }
 
 .heading {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 2.5em;
 }
 
 .services {
   min-height: auto;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
 }
 .services h2 {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .services .services-container {
   display: flex;
@@ -243,8 +248,9 @@ span {
   transition: 0.5s ease;
 }
 .services .services-container .services-box i {
-  font-size: 7rem;
+  font-size: 3rem;
   color: #15a3fb;
+  padding: 0 1 1em;
 }
 .services .services-container .services-box h3 {
   font-size: 2.6rem;
@@ -413,7 +419,7 @@ span {
   }
 }
 @media (max-width: 879px) {
-  .portfolio-container {
+  .portfolio .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -462,7 +468,7 @@ span {
   }
 }
 @media (max-width: 580px) {
-  .portfolio-container {
+  .portfolio .portfolio-container {
     grid-template-columns: 1fr;
   }
 }
@@ -482,8 +488,14 @@ span {
   }
 }
 @media (max-width: 365px) {
-  .home-img img,
+  .hero-img {
+    padding: 2em;
+  }
+  .hero-img img {
+    width: 90vw;
+  }
   .about-img img {
     width: 90vw;
+    padding: 4em;
   }
 }/*# sourceMappingURL=main.css.map */
