@@ -108,7 +108,7 @@ span {
   padding: 10em;
 }
 .home .hero-img img {
-  width: 20vw;
+  width: 40vw;
   animation: floatImage 4s ease-in-out infinite;
 }
 .home .home-content h3 {
@@ -185,10 +185,10 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 10em;
 }
 .about img {
-  padding: 10em;
-  width: 30vw;
+  width: 40vw;
 }
 .about a {
   display: inline-block;
@@ -225,7 +225,7 @@ span {
 }
 
 .services {
-  min-height: auto;
+  min-height: 100vh;
   padding-bottom: 1rem;
 }
 .services h2 {
@@ -407,6 +407,14 @@ span {
     font-size: 55%;
   }
 }
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  .contact {
+    margin-top: 50em;
+  }
+}
 @media (max-width: 991px) {
   .header {
     padding: 2rem 3%;
@@ -424,6 +432,9 @@ span {
   }
 }
 @media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
   #menu-icon {
     display: block;
   }
@@ -455,16 +466,21 @@ span {
   .home-content h1 {
     font-size: 5rem;
   }
-  .home-img img {
+  .home img {
     width: 70vw;
     margin-top: 4rem;
   }
   .about {
+    margin-top: 20em;
     flex-direction: column-reverse;
   }
   .about img {
     width: 70vw;
     margin-top: 4rem;
+    padding: 10em 10em 0;
+  }
+  .contact {
+    margin-top: 20em;
   }
 }
 @media (max-width: 580px) {
@@ -474,7 +490,7 @@ span {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 25%;
   }
   .contact form .input-box input {
     width: 100%;
@@ -488,14 +504,16 @@ span {
   }
 }
 @media (max-width: 365px) {
-  .hero-img {
-    padding: 2em;
+  html {
+    font-size: 25%;
   }
-  .hero-img img {
-    width: 90vw;
+  .home .hero-img img {
+    margin-top: 5em;
+    width: 50vw;
+    padding: 0 4em;
   }
-  .about-img img {
+  .home .about-img img {
     width: 90vw;
-    padding: 4em;
+    padding: 0 4em;
   }
 }/*# sourceMappingURL=main.css.map */
