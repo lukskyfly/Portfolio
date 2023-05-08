@@ -395,17 +395,43 @@ span {
 .hide {
 	display: inline;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 	html {
 		font-size: 55%;
 	}
+
 	.contact {
-		margin-top: 15em;
+		margin-top: 20em;
 	}
 }
 @media (max-width: 1024px) {
 	html {
 		font-size: 55%;
+	}
+	.portfolio {
+		.portfolio-container {
+			.portfolio-box {
+				.portfolio-shadow {
+					a{
+						font-size: 3rem;
+						margin-top: 1em;
+					}
+					.text-box{
+						h1 {
+							font-size: 2rem;
+						}
+						p{
+							font-size: 1.5rem;
+						}
+						
+					}
+					
+				}
+			}
+		}
+	}
+	.contact {
+		margin-top: 20em;
 	}
 }
 @media (max-width: 991px) {
