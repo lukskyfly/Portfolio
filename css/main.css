@@ -402,7 +402,7 @@ span {
   display: inline;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 2400px) {
   html {
     font-size: 55%;
   }
@@ -425,7 +425,7 @@ span {
     font-size: 1.5rem;
   }
   .contact {
-    margin-top: 20em;
+    margin-top: 30em;
   }
 }
 @media (max-width: 991px) {
@@ -493,7 +493,7 @@ span {
     padding: 10em 10em 0;
   }
   .contact {
-    margin-top: 10em;
+    margin-top: 20em;
   }
 }
 @media (max-width: 580px) {
@@ -507,15 +507,15 @@ span {
   }
   .home .hero-img img {
     margin-top: 5em;
-    width: 60vw;
+    width: 50vw;
     padding: 0 4em;
   }
   .about .about-img img {
-    width: 60vw;
+    width: 50vw;
     padding: 0 4em;
   }
   .portfolio {
-    margin-top: 10em;
+    margin-top: 35em;
   }
   .contact form .input-box input {
     width: 100%;
@@ -528,11 +528,11 @@ span {
     margin-top: 2rem;
   }
 }
-@media (max-width: 365px) {
+@media (max-width: 375px) {
   html {
     font-size: 35%;
   }
   .portfolio {
-    margin-top: 10em;
+    margin-top: 20em;
   }
 }/*# sourceMappingURL=main.css.map */
