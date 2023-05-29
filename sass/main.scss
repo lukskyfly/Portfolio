@@ -309,10 +309,10 @@ span {
 					text-align: center;
 					padding: 1.5em 3em;
 					p {
-						font-size: 2.5rem;
+						font-size: 2rem;
 					}
 					h1 {
-						font-size: 3rem;
+						font-size: 2.5rem;
 					}
 				}
 			}
@@ -519,6 +519,28 @@ span {
 			padding: 10em 10em 0;
 		}
 	}
+	.portfolio{
+		.portfolio-container {
+			.portfolio-box {
+				.portfolio-shadow {
+					a{
+						font-size: 3rem;
+						margin-top: 1em;
+					}
+					.text-box{
+						h1 {
+							font-size: 3rem;
+						}
+						p{
+							font-size: 2.5rem;
+						}
+						
+					}
+					
+				}
+			}
+		}
+	}
 	.contact {
 		margin-top: 20em;
 	}
@@ -552,7 +574,8 @@ span {
 		}
 	}
 	.portfolio {
-		margin-top: 35em;
+		margin-top: 40em;
+		
 	}
 
 	.contact form .input-box input {
