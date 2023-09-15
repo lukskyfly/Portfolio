@@ -108,7 +108,7 @@ span {
   padding: 10em;
 }
 .home .hero-img img {
-  width: 20vw;
+  width: 30vw;
   animation: floatImage 4s ease-in-out infinite;
 }
 .home .home-content h3 {
@@ -188,7 +188,7 @@ span {
   padding: 10em;
 }
 .about img {
-  width: 20vw;
+  width: 30vw;
 }
 .about a {
   display: inline-block;
@@ -481,7 +481,8 @@ span {
     font-size: 5rem;
   }
   .home img {
-    width: 50vw;
+    width: 100vw;
+    margin-top: 1rem;
   }
   .about {
     margin-top: 20em;

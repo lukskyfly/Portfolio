@@ -175,10 +175,10 @@ const typed = new Typed('.multiple-text', {
 // const divA = document.querySelector('div.a')
 // par.textContent = 'Dupa jasiu pierdzi stasiu'
 // divA.appendChild(par)
-let score = 10
-const ulList = document.createElement('ul')
-const liList = document.createElement('li')
-for (let i = 1; i <= score; i++) {
-    ulList.append(liList)
-}
-console.log(ulList);
+// let score = 10
+// const ulList = document.createElement('ul')
+// const liList = document.createElement('li')
+// for (let i = 1; i <= score; i++) {
+//     ulList.append(liList)
+// }
+// console.log(ulList);

@@ -97,7 +97,7 @@ span {
 	.hero-img {
 		padding: 10em;
 		img {
-			width: 20vw;
+			width: 30vw;
 			animation: floatImage 4s ease-in-out infinite;
 		}
 	}
@@ -182,7 +182,7 @@ span {
 	gap: 2rem;
 	padding: 10em;
 	img {
-		width: 20vw;
+		width: 30vw;
 	}
 	a {
 		display: inline-block;
@@ -506,7 +506,9 @@ span {
 
 	.home {
 		img {
-			width: 50vw;
+			width: 100vw;
+			margin-top: 1rem;
+			// padding: 10em 10em 0;
 		}
 	}
 
